@@ -4696,7 +4696,7 @@ func (f *Fpdf) putcatalog() {
 
 func (f *Fpdf) putheader() {
 	if len(f.blendMap) > 0 && f.pdfVersion < "1.4" {
-		f.pdfVersion = "1.7"
+		f.pdfVersion = "1.6"
 	}
 	f.outf("%%PDF-%s", f.pdfVersion)
 }
